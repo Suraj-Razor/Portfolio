@@ -14,7 +14,6 @@ body .layout {
   display: grid;
   grid-template-rows: max-content;
   gap: 30px;
-  padding: 0 30px;
 }
 body .navigation {
   display: flex;
@@ -78,13 +77,14 @@ body main .main-section .section-img {
 body main .main-section .section-img-animation {
   animation: background-img-animation 5s infinite;
 }
+body main .main-section .media-content h3 {
+  text-align: right;
+}
 body main .main-section .media-content .section-heading {
   font-size: 36px;
   font-weight: 600;
   display: block;
-}
-body main .main-section .media-content .section-heading span {
-  padding-left: 100px;
+  text-align: right;
 }
 body main .main-section .media-content .section-sub-heading {
   font-size: 24px;
@@ -179,9 +179,14 @@ body footer .footer-text {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 700px) {
+  .layout {
+    padding: 0;
+    gap: 20px;
+  }
   .layout .navigation {
     flex-direction: column;
     justify-content: center;
@@ -189,8 +194,7 @@ body footer .footer-text {
   }
   .layout .navigation .page-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     text-align: center;
   }
@@ -210,6 +214,9 @@ body footer .footer-text {
   }
 }
 @media screen and (max-width: 400px) {
+  .layout {
+    padding: 0 2px;
+  }
   .layout .navigation {
     flex-direction: column;
     justify-content: center;
@@ -217,22 +224,29 @@ body footer .footer-text {
   }
   .layout .navigation .page-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     text-align: center;
   }
   .layout main .main-section {
     flex-direction: column;
     gap: 0;
+    padding: 0;
   }
   .layout main .main-section .section-img {
     align-self: center;
     height: 25%;
   }
+  .layout main .main-section .media-content h3 {
+    text-align: center;
+  }
   .layout main .main-section .media-content .section-heading {
     font-size: 30px;
     font-weight: 600;
     display: block;
+    text-align: center;
+  }
+  .layout main .main-skills-section {
+    padding: 0;
   }
 }/*# sourceMappingURL=home.css.map */
