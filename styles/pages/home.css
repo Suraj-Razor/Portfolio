@@ -55,7 +55,7 @@ body .hero-section .container .main-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px;
 }
 body .hero-section .container .main-section .section-img-animation {
   animation: background-img-animation 5s infinite;
@@ -77,7 +77,7 @@ body .hero-section .container .main-section .section-img-animation {
 body .hero-section .container .main-section .media-content {
   text-align: right;
 }
-body .hero-section .container .main-section .media-content span {
+body .hero-section .container .main-section .media-content .tag-line-header {
   text-transform: uppercase;
   line-height: 2;
   letter-spacing: 2px;
@@ -119,6 +119,8 @@ body .hero-section .container .main-section .media-content .btn-section a {
   text-decoration: none;
 }
 body .hero-section .container .main-section .media-content .btn-section a:hover {
+  background-color: #002755;
+  color: #fff;
   transform: translateY(-3px);
   border-radius: 10px;
 }
@@ -157,6 +159,57 @@ body .skill-section .container .skill-flex .skills p {
   line-height: 1.6;
 }
 
+body .about-me-section .about-me-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 30px;
+  justify-items: center;
+  align-items: center;
+  color: #002755;
+  border-radius: 5px;
+  letter-spacing: 0.4px;
+}
+body .about-me-section .about-me-media .btn-section {
+  grid-column: 1/-1;
+}
+body .about-me-section .about-me-media .btn-section .tagline {
+  font-size: 20px;
+  font-weight: 500;
+}
+body .about-me-section .about-me-media .btn-section a {
+  display: inline-block;
+  border: none;
+  color: #002755;
+  background-color: #ffc967;
+  transition: all 0.5s;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 40px;
+  padding: 0 22px;
+  height: 40px;
+  text-decoration: none;
+}
+body .about-me-section .about-me-media .btn-section a:hover {
+  background-color: #002755;
+  color: #fff;
+  transform: translateY(-3px);
+  border-radius: 10px;
+}
+body .about-me-section .about-me-media .btn-section a a {
+  text-decoration: none;
+}
+body .about-me-section .about-me-media .about-me-text {
+  padding: 20px;
+}
+body .about-me-section .about-me-media .about-me-text .tag-line-header {
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: #05f;
+}
+
 body .footer-section .container .social-icon {
   display: flex;
   justify-content: flex-end;
@@ -170,7 +223,6 @@ body .footer-section .container .footer-bar {
   display: block;
   height: 1px;
   background-color: #343a40;
-  width: 100%;
   margin-top: 5px;
 }
 body .footer-section .container .footer-text {
@@ -203,12 +255,28 @@ body .footer-section .container .footer-text {
   body .hero-section .container .main-section .media-content .btn-section {
     padding: 35px 15px;
   }
+  body .about-me-section {
+    padding: 10px 0;
+  }
+  body .about-me-section .about-me-media {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  body .about-me-section .about-me-media .btn-section {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .section-img {
     width: 200px;
   }
 }
 @media (max-width: 560px) {
   body .hero-section .container .navigation {
+    padding: 3px;
     flex-direction: column;
   }
   body .hero-section .container .navigation #logo {
@@ -220,7 +288,7 @@ body .footer-section .container .footer-text {
     flex-wrap: wrap;
   }
   body .hero-section .container .navigation .page-nav a {
-    word-spacing: normal;
+    letter-spacing: 0.5px;
     font-size: 14px;
   }
   body .hero-section .container .main-section {

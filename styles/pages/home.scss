@@ -84,7 +84,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 20px;
+        padding: 40px;
         .section-img {
         }
         .section-img-animation {
@@ -106,7 +106,7 @@ body {
         }
         .media-content {
           text-align: right;
-          span {
+          .tag-line-header {
             text-transform: uppercase;
             line-height: 2;
             letter-spacing: 2px;
@@ -148,6 +148,8 @@ body {
 
               text-decoration: none;
               &:hover {
+                background-color: #002755;
+                color: $white-color;
                 transform: translateY(-3px);
                 border-radius: 10px;
               }
@@ -198,6 +200,63 @@ body {
 }
 
 body {
+  .about-me-section {
+    .about-me-media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 30px;
+      justify-items: center;
+      align-items: center;
+      color: #002755;
+      border-radius: 5px;
+      letter-spacing: 0.4px;
+      .btn-section {
+        grid-column: 1/-1;
+        .tagline {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        a {
+          display: inline-block;
+          border: none;
+          color: #002755;
+          background-color: #ffc967;
+          transition: all 0.5s;
+          border-radius: 5px;
+          // text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          line-height: 40px;
+          padding: 0 22px;
+          height: 40px;
+
+          text-decoration: none;
+          &:hover {
+            background-color: #002755;
+            color: $white-color;
+            transform: translateY(-3px);
+            border-radius: 10px;
+          }
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      .about-me-text {
+        padding: 20px;
+        .tag-line-header {
+          text-transform: uppercase;
+          line-height: 2;
+          letter-spacing: 2px;
+          color: #05f;
+        }
+      }
+    }
+  }
+}
+
+body {
   .footer-section {
     .container {
       .social-icon {
@@ -213,7 +272,7 @@ body {
         display: block;
         height: 1px;
         background-color: #343a40;
-        width: 100%;
+        // width: 100%;
         margin-top: 5px;
       }
       .footer-text {
@@ -252,6 +311,21 @@ body {
       }
     }
   }
+  body .about-me-section {
+    padding: 10px 0;
+    .about-me-media {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      .btn-section {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
   .section-img {
     width: 200px;
   }
@@ -259,6 +333,7 @@ body {
 
 @media (max-width: 560px) {
   body .hero-section .container .navigation {
+    padding: 3px;
     flex-direction: column;
     #logo {
       align-self: center;
@@ -268,7 +343,7 @@ body {
       justify-content: space-between;
       flex-wrap: wrap;
       a {
-        word-spacing: normal;
+        letter-spacing: 0.5px;
         font-size: 14px;
       }
     }
