@@ -20,23 +20,23 @@
     <link rel="stylesheet" href="./styles/pages/home.css" />
   </head>
   <body>
-    <div class="layout">
-      <div class="navigation">
-        <header>
-          <a href="./index.html">
-            <div>Suraj Shrestha</div>
-            <div>WEB DEVELOPER</div>
-          </a>
-        </header>
-        <nav class="page-nav">
-          <a href="">Home</a>
-          <a href="">Blogs</a>
-          <a href="">Contact</a>
-          <a href="">Projects</a>
-        </nav>
-      </div>
-      <main>
-        <section class="main-section">
+    <section class="hero-section">
+      <div class="container">
+        <div class="navigation">
+          <header id="logo">
+            <a href="./index.html">
+              <div>Suraj Shrestha</div>
+              <div>WEB DEVELOPER</div>
+            </a>
+          </header>
+          <nav class="page-nav">
+            <a href="">Home</a>
+            <a href="">Blogs</a>
+            <a href="">Contact</a>
+            <a href="">Projects</a>
+          </nav>
+        </div>
+        <main class="main-section">
           <img
             class="section-img section-img-animation"
             src="./assets/img/main-img-wo-bckgrd.png"
@@ -44,17 +44,23 @@
             width="300px"
           />
           <div class="media-content">
-            <h3>Greetings fellow human!</h3>
-            <h1 class="section-heading">
-              I'm Suraj, a Web Developer from Sydney, AU.<br />
-            </h1>
+            <span>Welcome to my creative space</span>
+            <h1>"Exploring Creativity</h1>
+            <h1>Through Innovation"</h1>
+            <h3 class="section-heading">
+              I'm Suraj, a Full Stack Developer from Sydney, AU.
+            </h3>
             <div class="btn-section">
               <span class="tagline">Explore, Engage, Excel.</span>
               <a href="">Let's have a Chat</a>
             </div>
           </div>
-        </section>
-        <section class="main-skills-section">
+        </main>
+      </div>
+    </section>
+    <section class="skill-section">
+      <div class="container">
+        <div class="skill-flex">
           <div class="skills">
             <div class="icon-text">
               <i class="fa-solid fa-lightbulb fa-2x"></i>
@@ -86,9 +92,11 @@
             </p>
             <span></span>
           </div>
-        </section>
-      </main>
-      <footer>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
         <div class="social-icon">
           <a href="">
             <i class="fa-brands fa-facebook fa-2x"></i>
@@ -107,7 +115,7 @@
         <div class="footer-text">
           © 2023 Suraj Shrestha. All rights reserved.
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

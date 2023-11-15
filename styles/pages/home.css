@@ -2,57 +2,68 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #343a40;
-  background-color: #d3e0ea;
+  font-family: "Poppins", sans-serif;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
+body .hero-section {
+  color: #fff;
+  background-color: #3f54f7;
+  padding-top: 10px;
 }
-body .layout {
-  display: grid;
-  grid-template-rows: max-content;
-  gap: 30px;
-}
-body .navigation {
+body .hero-section .container .navigation {
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
-body .navigation header a {
+body .hero-section .container .navigation #logo {
+  min-width: 120px;
+}
+body .hero-section .container .navigation #logo a {
   text-decoration: none;
+  color: #fff;
 }
-body .navigation header a div:first-child {
+body .hero-section .container .navigation #logo a div:first-child {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
 }
-body .navigation header a div:last-child {
+body .hero-section .container .navigation #logo a div:last-child {
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: lighter;
 }
-body .navigation .page-nav a {
+body .hero-section .container .navigation .page-nav a {
+  color: #fff;
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
-  padding: 10px;
+  padding: 5px;
+  gap: 10px;
   letter-spacing: 4px;
   cursor: pointer;
   transition: all 0.5s;
-  border-radius: 15% 85% 83% 17%/48% 48% 52% 52%;
+  border-radius: 4px;
 }
-body .navigation .page-nav a:hover {
-  background-color: #a9c8e8;
+body .hero-section .container .navigation .page-nav a:hover {
+  background-color: #fff;
+  color: #343a40;
+  font-weight: 500;
   transform: translateY(-3px);
+}
+body .hero-section .container .main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+body .hero-section .container .main-section .section-img-animation {
+  animation: background-img-animation 5s infinite;
 }
 @keyframes background-img-animation {
   0% {
     border-radius: 10% 90% 8% 92%/86% 8% 92% 14%;
-    background-color: #c6e2f1;
+    background-color: #3f54f7;
   }
   50% {
     border-radius: 78% 22% 77% 23%/15% 84% 16% 85%;
@@ -60,193 +71,185 @@ body .navigation .page-nav a:hover {
   }
   100% {
     border-radius: 10% 90% 8% 92%/86% 8% 92% 14%;
-    background-color: #c6e2f1;
+    background-color: #3f54f7;
   }
 }
-body main .main-section {
-  padding: 0 40px;
+body .hero-section .container .main-section .media-content {
+  text-align: right;
+}
+body .hero-section .container .main-section .media-content span {
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+body .hero-section .container .main-section .media-content h1 {
+  letter-spacing: 2px;
+  letter-spacing: -0.015em;
+  line-height: 60px;
+  font-size: 44px;
+  text-align: right;
+}
+body .hero-section .container .main-section .media-content h3 {
+  font-weight: 500;
+}
+body .hero-section .container .main-section .media-content .btn-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  flex-wrap: inherit;
-}
-body main .main-section .section-img {
-  flex: 1;
-}
-body main .main-section .section-img-animation {
-  animation: background-img-animation 5s infinite;
-}
-body main .main-section .media-content h3 {
-  text-align: right;
-}
-body main .main-section .media-content .section-heading {
-  font-size: 36px;
-  font-weight: 600;
-  display: block;
-  text-align: right;
-}
-body main .main-section .media-content .section-sub-heading {
-  font-size: 24px;
-  display: block;
-  padding-bottom: 20px;
-  line-height: 1.4;
-  font-weight: 300;
-}
-body main .main-section .media-content .section-text {
-  padding: 0 20px;
-  line-height: 1.6;
-  letter-spacing: 1px;
-}
-body main .main-section .media-content .btn-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 30px;
+  gap: 40px;
+  padding-top: 70px;
   flex-wrap: wrap-reverse;
 }
-body main .main-section .media-content .btn-section .tagline {
+body .hero-section .container .main-section .media-content .btn-section .tagline {
   font-size: 20px;
   font-weight: 500;
 }
-body main .main-section .media-content .btn-section a {
-  padding: 12px;
+body .hero-section .container .main-section .media-content .btn-section a {
   border: none;
-  background-color: #8b3dff;
-  color: #e7e9ff;
+  color: #002755;
+  background-color: #ffc967;
   transition: all 0.5s;
   border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 40px;
+  padding: 0 22px;
+  height: 40px;
   text-decoration: none;
 }
-body main .main-section .media-content .btn-section a:hover {
-  background-color: #7300e6;
+body .hero-section .container .main-section .media-content .btn-section a:hover {
   transform: translateY(-3px);
   border-radius: 10px;
 }
-body main .main-section .media-content .btn-section a a {
+body .hero-section .container .main-section .media-content .btn-section a a {
   text-decoration: none;
 }
-body main .main-skills-section {
+
+body .skill-section {
+  padding: 20px 0;
+  color: #343a40;
+}
+body .skill-section .container .skill-flex {
   padding: 0 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
-body main .main-skills-section .skills {
-  width: 300px;
+body .skill-section .container .skill-flex .skills {
+  width: 250px;
   display: inline-block;
   align-items: center;
   text-align: left;
-  gap: 10px;
 }
-body main .main-skills-section .skills:hover {
+body .skill-section .container .skill-flex .skills:hover {
   transform: translateY(-10px);
 }
-body main .main-skills-section .skills .icon-text {
+body .skill-section .container .skill-flex .skills .icon-text {
   display: flex;
   padding: 20px 0;
   gap: 20px;
 }
-body main .main-skills-section .skills p {
+body .skill-section .container .skill-flex .skills p {
   letter-spacing: 1px;
   line-height: 1.6;
 }
-body footer .social-icon {
-  padding-bottom: 15px;
+
+body .footer-section .container .social-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
 }
-body footer .social-icon a {
-  width: 0;
-  height: 0;
+body .footer-section .container .social-icon a {
   text-decoration: none;
-  margin: 0 5px;
+  color: #343a40;
 }
-body footer .footer-bar {
+body .footer-section .container .footer-bar {
+  display: block;
   height: 1px;
   background-color: #343a40;
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
-body footer .footer-text {
+body .footer-section .container .footer-text {
+  text-align: right;
+  padding-top: 5px;
   font-size: 12px;
 }
 
-@media screen and (min-width: 1200px) {
-  .layout {
+@media (min-width: 1200px) {
+  .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 30px;
+    margin: 0 auto;
   }
 }
-@media screen and (max-width: 700px) {
-  .layout {
+@media (max-width: 730px) {
+  body .hero-section .container .main-section {
     padding: 0;
-    gap: 20px;
-  }
-  .layout .navigation {
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .layout .navigation .page-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
+  body .hero-section .container .main-section .media-content {
     text-align: center;
   }
-  .layout main .main-section {
-    flex-direction: column;
-    gap: 0;
+  body .hero-section .container .main-section .media-content h1 {
+    text-align: center;
+    font-size: 32px;
   }
-  .layout main .main-section .section-img {
-    order: 1;
-    align-self: center;
-    height: 50%;
+  body .hero-section .container .main-section .media-content .btn-section {
+    padding: 35px 15px;
   }
-  .layout main .main-section .media-content .section-heading {
-    font-size: 30px;
-    font-weight: 600;
-    display: block;
+  .section-img {
+    width: 200px;
   }
 }
-@media screen and (max-width: 400px) {
-  .layout {
-    padding: 0 2px;
+@media (max-width: 560px) {
+  body .hero-section .container .navigation {
+    flex-direction: column;
   }
-  .layout .navigation {
+  body .hero-section .container .navigation #logo {
+    align-self: center;
+  }
+  body .hero-section .container .navigation .page-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body .hero-section .container .navigation .page-nav a {
+    word-spacing: normal;
+    font-size: 14px;
+  }
+  body .hero-section .container .main-section {
+    padding: 0;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .layout .navigation .page-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
+  body .hero-section .container .main-section .media-content {
     text-align: center;
   }
-  .layout main .main-section {
-    flex-direction: column;
-    gap: 0;
-    padding: 0;
+  body .hero-section .container .main-section .media-content h1 {
+    padding: 10px;
+    line-height: 30px;
   }
-  .layout main .main-section .section-img {
-    align-self: center;
-    height: 25%;
+  body .hero-section .container .main-section .media-content .btn-section {
+    padding: 10px;
   }
-  .layout main .main-section .media-content h3 {
-    text-align: center;
+  body .skill-section {
+    padding: 5px 0;
   }
-  .layout main .main-section .media-content .section-heading {
-    font-size: 30px;
-    font-weight: 600;
-    display: block;
-    text-align: center;
+  body .skill-section .container .skill-flex {
+    padding: 0 5px;
   }
-  .layout main .main-skills-section {
+  body .skill-section .container .skill-flex .skills p {
+    letter-spacing: 0;
+  }
+  body .skill-section .container .skill-flex .skills .icon-text {
     padding: 0;
   }
 }/*# sourceMappingURL=home.css.map */
