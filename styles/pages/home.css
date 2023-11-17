@@ -5,6 +5,27 @@
   font-family: "Poppins", sans-serif;
 }
 
+.button {
+  display: inline-block;
+  border: none;
+  color: #002755;
+  background-color: #ffc967;
+  transition: all 0.5s;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 40px;
+  padding: 0 22px;
+  height: 40px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #002755;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
 body .hero-section {
   color: #fff;
   background-color: #3f54f7;
@@ -210,20 +231,78 @@ body .about-me-section .about-me-media .about-me-text .tag-line-header {
   color: #05f;
 }
 
+body .form-section {
+  color: #fff;
+  background-color: #3f54f7;
+}
+body .form-section .form-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+body .form-section .form-group .form-text {
+  width: 35vw;
+}
+body .form-section .form-group .form-text .tag-line-header {
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+body .form-section .form-group .form-text h1 {
+  letter-spacing: 2px;
+  letter-spacing: -0.015em;
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+body .form-section .form-group .form-text h3 {
+  font-weight: 500;
+}
+body .form-section .form-group .form-text .ideas-bullet {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+body .form-section .form-group .form-elements {
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  color: #002755;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .form-section .form-group .form-elements input {
+  border-radius: 4px;
+  border: solid #002755 1px;
+  height: 40px;
+  padding: 0 5px;
+}
+body .form-section .form-group .form-elements #message {
+  resize: none;
+  border-radius: 4px;
+  border: solid #002755 1px;
+  padding: 0 5px;
+}
+
+body .footer-section .container {
+  color: #002755;
+}
 body .footer-section .container .social-icon {
+  padding: 5px 20px;
   display: flex;
   justify-content: flex-end;
   gap: 30px;
 }
 body .footer-section .container .social-icon a {
   text-decoration: none;
-  color: #343a40;
 }
 body .footer-section .container .footer-bar {
   display: block;
   height: 1px;
   background-color: #343a40;
-  margin-top: 5px;
 }
 body .footer-section .container .footer-text {
   text-align: right;
@@ -235,6 +314,12 @@ body .footer-section .container .footer-text {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+  .about-me-section {
+    padding: 100px 0;
+  }
+  .form-group {
+    height: 600px;
   }
 }
 @media (max-width: 730px) {
@@ -270,11 +355,27 @@ body .footer-section .container .footer-text {
     justify-content: center;
     align-items: center;
   }
+  body .form-section .form-group {
+    flex-direction: column;
+  }
+  body .form-section .form-group .form-text {
+    width: auto;
+    margin-bottom: 5px;
+  }
+  body .form-section .form-group .form-elements {
+    width: 80dvw;
+  }
   .section-img {
     width: 200px;
   }
+  .section-img-illustration {
+    width: 300px;
+  }
 }
 @media (max-width: 560px) {
+  .section-img-illustration {
+    width: 250px;
+  }
   body .hero-section .container .navigation {
     padding: 3px;
     flex-direction: column;
@@ -319,5 +420,8 @@ body .footer-section .container .footer-text {
   }
   body .skill-section .container .skill-flex .skills .icon-text {
     padding: 0;
+  }
+  body .form-section .container {
+    padding: 40px;
   }
 }/*# sourceMappingURL=home.css.map */
