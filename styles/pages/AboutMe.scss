@@ -15,13 +15,22 @@ h3 {
   line-height: 1.8;
 }
 
+.button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
 p {
   letter-spacing: 1.2px;
 }
 main {
   background-color: #fff;
   .resume {
+    position: relative;
     background-color: #ebecf0;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     color: #002755;
     padding: 20px 10px;
     display: grid;
@@ -38,6 +47,8 @@ main {
     .profile-top {
       display: flex;
       flex-direction: column;
+      h1 {
+      }
     }
     .contact-details {
       .contacts {
