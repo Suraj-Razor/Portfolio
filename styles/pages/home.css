@@ -1,3 +1,16 @@
+/*Four Text Component R2
+Search for below 
+Text Component 1
+Text Component 2
+Text Component 3
+Text Component 4
+*/
+/*Four Graphical Component R3 
+Graphical Content 1
+Graphical Content 2
+Graphical Content 3
+Graphical Content 4
+*/
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +44,12 @@ body .hero-section {
   color: #fff;
   background-color: #3f54f7;
   padding-top: 10px;
+}
+body .hero-section .container {
+  /* Text Component 1 Start */
+  /* Text Component 1 End */
+  /* Graphical Content 1 Start */
+  /* Graphical Content 1 End */
 }
 body .hero-section .container .navigation {
   padding: 10px;
@@ -154,6 +173,10 @@ body .skill-section {
   padding: 20px 0;
   color: #343a40;
 }
+body .skill-section .container {
+  /*Graphical Content 2 Start*/
+  /*Graphical Content 2 End*/
+}
 body .skill-section .container .skill-flex {
   padding: 0 20px;
   display: flex;
@@ -181,6 +204,10 @@ body .skill-section .container .skill-flex .skills p {
   line-height: 1.6;
 }
 
+body .about-me-section {
+  /*Graphical Content 3 Start*/
+  /*Graphical Content 3 End*/
+}
 body .about-me-section .about-me-media {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,6 +217,8 @@ body .about-me-section .about-me-media {
   color: #002755;
   border-radius: 5px;
   letter-spacing: 0.4px;
+  /*Text Component 2 Start*/
+  /*Text Component 2 End*/
 }
 body .about-me-section .about-me-media .btn-section {
   grid-column: 1/-1;
@@ -235,12 +264,16 @@ body .about-me-section .about-me-media .about-me-text .tag-line-header {
 body .form-section {
   color: #fff;
   background-color: #3f54f7;
+  /*Graphical Content 4 Start */
+  /*Graphical Content 4 End */
 }
 body .form-section .form-group {
   display: flex;
   align-items: center;
   gap: 30px;
   padding: 40px;
+  /*Text Component 3 Start*/
+  /*Text Component 3 End*/
 }
 body .form-section .form-group .form-text {
   width: 35vw;
@@ -290,6 +323,8 @@ body .form-section .form-group .form-elements #message {
 
 body .footer-section .container {
   color: #002755;
+  /*Text Component 4 Start*/
+  /*Text Component 4 End*/
 }
 body .footer-section .container .social-icon {
   padding: 5px 20px;
@@ -317,7 +352,7 @@ body .footer-section .container .footer-text {
     margin: 0 auto;
   }
   .about-me-section {
-    padding: 100px 0;
+    padding: 40px 0;
   }
   .form-group {
     height: 600px;
