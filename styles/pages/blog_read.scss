@@ -1,0 +1,52 @@
+@import "./home.scss";
+
+body {
+  color: #002755;
+  background-color: #f5f5f5;
+  .blog-post {
+    .blog-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      h1,
+      h2 {
+        grid-column: 1/-1;
+        line-height: 2;
+        letter-spacing: 2px;
+      }
+      h2 {
+        text-transform: uppercase;
+        color: #05f;
+      }
+      h5 {
+        font-weight: 100;
+      }
+      .author {
+        text-align: right;
+      }
+    }
+    .section-img-illustration {
+      float: left;
+      padding: 10px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+    .blog-post-main {
+      padding: 20px;
+      p {
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .blog-post-main {
+    display: flex;
+    flex-direction: column;
+    .section-img-illustration {
+      align-self: center;
+    }
+  }
+}
